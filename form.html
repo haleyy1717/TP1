@@ -1,19 +1,26 @@
 <form method="post" action="/submit_form">
-    <label for="name">Name:</label><br>
+    <label for="name">Pseudo:</label><br>
     <input type="text" id="name" name="name"><br>
-    <label for="email">Email:</label><br>
+    <label for="mdp">Mot de passe:</label><br>
+    <input type="text" id="mdp" name="mdp"><br>
+    <label for="email">E-mail:</label><br>
     <input type="email" id="email" name="email"><br>
-    <label for="address">Address:</label><br>
-    <input type="text" id="address" name="address"><br>
-    <label for="city">City:</label><br>
-    <input type="text" id="city" name="city"><br>
-    <label for="country">Country:</label><br>
-    <select id="country" name="country">
-        <option value="usa">USA</option>
-        <option value="canada">Canada</option>
-        <option value="mexico">Mexico</option>
+    <label for="Objet_message">Objet du message:</label><br>
+    <select>
+        <option value="Question">J'ai une question.</option>
+        <option value="Suggestion">Je fais une suggestion.</option>
+        <option value="Problème">Je rencontre un problème.</option>
+        <option value="Autre">Autre...</option>
     </select><br>
-    <input type="checkbox" id="newsletter" name="newsletter" value="subscribe">
-    <label for="newsletter">Subscribe to newsletter</label><br>
+    <label for="Contenu_message">Contenu du message:</label><br>
+    <input type="text" id="Contenu_message" name="Contenu_message"><br>
+    <label for="Niv_urgence">Niveau d'urgence:</label><br>
+    <select id="Niv_urgence" name="Niv_urgence">
+        <option value="Bas">Lent (attente > 1 semaine)</option>
+        <option value="Moyen">Moyen (1 jour < temps d'attente < 1 semaine)</option>
+        <option value="Haut">Rapide (temps d'attente < 1 jour)</option>
+    </select><br>
+    <input type="checkbox" id="confidentialité" name="confidentialité" value="j'accepte">
+    <label for="confidentialité">J'accepte la politique de confidentialité.</label><br>
     <input type="submit" value="Submit">
 </form>
